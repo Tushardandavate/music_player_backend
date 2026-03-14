@@ -15,7 +15,7 @@ app.use(express.json());
 connectDB();
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://melotix-fullstack-music-player.netlify.app/",
     credentials: true,
 }));
 
