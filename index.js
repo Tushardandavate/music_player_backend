@@ -22,5 +22,9 @@ app.use(cors({
 app.use("/api/songs", songRouter);
 app.use("/api/auth", authRoutes);
 
+app.get("/", (req, res) => {
+    res.send("Backend is running");
+});
+
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
